@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: "Nunito Sans Regular";
-    src: local(Roboto);
+    src: local(Nunito Sans Regular);
     src: url("../assets/fonts/NunitoSans-Regular.woff") format("woff");
     src: url("../assets/fonts/NunitoSans-Regular.ttf") format('truetype');
     // font-weight: 100;
@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: "Nunito Sans Light";
-    src: local(Roboto);
+    src: local(Nunito Sans Light);
     src: url("../assets/fonts/NunitoSans-Light.woff") format("woff");
     src: url("../assets/fonts/NunitoSans-Light.ttf") format('truetype');
     // font-weight: 100;
@@ -35,14 +35,14 @@
 
 @font-face {
     font-family: "Krub Medium";
-    src: local(Roboto);
+    src: local(Krub);
     src: url("../assets/fonts/Krub-Medium.woff") format("woff");
     src: url("../assets/fonts/Krub-Medium.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Krub Bold";
-    src: local(Roboto);
+    src: local(Krub);
     src: url("../assets/fonts/Krub-Bold.woff") format("woff");
     src: url("../assets/fonts/Krub-Bold.ttf") format('truetype');
 }
@@ -64,6 +64,8 @@
     --height-container: calc(100vh - var(--height-nav));
 
     // Maquetacion
+    --gt-body:  "content"
+                "nav" ;
     --gtc-container: 1fr;
     --gtc-nav: repeat(5, auto);
 
@@ -88,8 +90,7 @@ body{
     display: grid;
     
     grid-template-rows: 1fr 50px;
-    grid-template: "content"
-                    "nav" ;
+    grid-template: var(--gt-body);
     
 }
 
@@ -109,16 +110,13 @@ body{
 header{
     width: 100%;
     text-align: center;
-
     height: 100vh;
-
-    
 }
 
 #logo{
     filter: drop-shadow(var(--shadow));
     width: 500px;
-    max-width: 80vw;
+    max-width: 70vw;
     margin: auto;
     img{
         width: 100%;
@@ -127,10 +125,10 @@ header{
 }
 
 #site-title{
-    font-family: 'Roboto Thin',  'Helvetica neue', sans-serif;
+    font-family: 'Roboto Thin', 'Helvetica neue', sans-serif;
     text-transform: uppercase;
     font-weight: 100;
-    font-size: min(10.9cqw, 68.3px);
+    font-size: min(9.585cqw, 68.3px);
 }
 
 #rrss{
@@ -141,15 +139,20 @@ header{
 
     display: flex;
     place-content: center;
-
     gap: 30px;
+}
+
+#scroll-indicator{
+    font-size: 3em;
+    transform:scale(1.1,0.5);
+    font-family: 'Roboto Thin', 'Helvetica neue', sans-serif;
 }
 
 h1{
     font-family: 'Nunito Sans';
     color: var(--amarillo);
     text-shadow: var(--shadow);
-    font-size: min(4vw, 42px);
+    font-size: min(5vw, 40px);
     font-weight: 100;
 }
 
