@@ -11,8 +11,6 @@
     <div id="container">
         <?php include_once('parts/header.php') ?>
         
-        
-        <aside>ASIDE</aside>
         <main>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus nulla nec rutrum porta. Maecenas vitae magna diam. Morbi efficitur, felis et pulvinar varius, erat purus sollicitudin ipsum, vitae accumsan est nulla a metus. Aliquam sodales, mi eget tempor ullamcorper, orci est consectetur nunc, nec mattis justo odio nec sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque ac justo vitae ipsum accumsan eleifend. Fusce luctus malesuada massa et pellentesque.</p<>
             <p>Nulla at nunc id quam dignissim efficitur a vitae mauris. Etiam dapibus, erat id porttitor auctor, orci ex tempus orci, nec pharetra ante turpis non velit. Ut ut varius lectus. Duis lobortis, dolor iaculis venenatis ultrices, felis velit efficitur tellus, molestie sagittis libero eros sed nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean gravida vestibulum vehicula. Vestibulum consectetur dolor ac ornare hendrerit. Phasellus laoreet scelerisque ligula sit amet ultricies. Proin lobortis tellus leo.</p>

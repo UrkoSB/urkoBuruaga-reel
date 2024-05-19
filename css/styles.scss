@@ -91,26 +91,25 @@ body{
     
     grid-template-rows: 1fr 50px;
     grid-template: var(--gt-body);
-    
+    overflow: hidden;
 }
 
 #container{
-    position: fixed;
     grid-area: content;
-    overflow: hidden;
-    top: 0;
+    overflow-x: hidden;
     height: var(--height-container);
     mask-image: linear-gradient(to top, transparent, black 6%);
-
-    display: grid;
-    grid-template-columns: var(--gtc-container);
     padding: 0 var(--padding-general);
 }
 
 header{
     width: 100%;
     text-align: center;
-    height: 100vh;
+    min-height: calc(100vh - var(--height-nav)  - 1rem);
+    display: grid;
+    padding-bottom: 3em;
+
+    align-content: space-around;
 }
 
 #logo{
@@ -149,7 +148,7 @@ header{
 }
 
 h1{
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito Sans Light';
     color: var(--amarillo);
     text-shadow: var(--shadow);
     font-size: min(5vw, 40px);
@@ -203,7 +202,7 @@ nav{
     font-family: 'Krub Medium';
 }
 
-.simplify{
+.nav-simplify{
     p{
         display: var(--display-simplify-p);
     }
