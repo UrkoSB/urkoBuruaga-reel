@@ -1,4 +1,4 @@
-<nav>
+<nav id="site-nav">
     <section>
         <a href="" id="nav-nor">
             <p class="nav-item-eus">Nor naiz</p>
