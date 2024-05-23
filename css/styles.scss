@@ -145,6 +145,23 @@ header{
     font-size: 3em;
     transform:scale(1.1,0.5);
     font-family: 'Roboto Thin', 'Helvetica neue', sans-serif;
+
+    animation: updown 1.2s ease-in 5s infinite alternate none;
+}
+
+@keyframes updown {
+    from{
+        transform: 
+            translateY(0)
+            scale(1.1,0.5)
+        ;
+    }
+    to{
+        transform: 
+            translateY(20px)
+            scale(1.1,0.5)
+        ;
+    }
 }
 
 h1{
