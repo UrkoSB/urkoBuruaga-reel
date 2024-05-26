@@ -75,7 +75,7 @@
 
     // Efectos
     --shadow-header: 2px 2px 5px rgba(0, 0, 0, 0.752);
-    --shadow: 5px 5px 10px rgba(0, 0, 0, 0.752);
+    --shadow: 3px 3px 10px rgba(0, 0, 0, 0.752);
     --border-radius: 10px;
 }
 
@@ -248,6 +248,7 @@ main section{
     grid-template-columns: auto auto 1fr;
     grid-template-rows: repeat(2, auto);
     
+    
     article{
         display: grid;
         grid-column: span 3;
@@ -255,42 +256,45 @@ main section{
     }
     h2{
         position: relative;
-        background-color: #1f1f1fe6;
+        background: linear-gradient(hsla(0, 0%, 12%, 0.8) 15%, #1f1f1f);
         width: auto;
         padding: var(--padding-general);
         border-radius: var(--border-radius) var(--border-radius) 0 0;
-        z-index: -1;
+        z-index: -2;
         opacity: 0.85;
 
-        &::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: inherit;
-            // background-color: red;
-            //  box-shadow: 2px 2px 6px black;
-            box-shadow: var(--shadow);
-            z-index: -2;
-
-        }
+        box-shadow: var(--shadow);
+        pointer-events: auto;
         
-        &.active{
-            // z-index: -1;
-            opacity: 1;
-            color: #C7AF2B;
-        }
+        
     }
 
-    div{
+    .active h2{
+        z-index: 0;
+        opacity: 1;
+        color: #C7AF2B;
+        
+    }
+
+    .tab_content{
+        position: relative;
         grid-column: span 3;
-        background-color: #1f1f1fe6;
+        background: linear-gradient(#1f1f1f, rgba(31, 31, 31, 0.8) 15%);
+        
         border-radius: 0 var(--border-radius) var(--border-radius) var(--border-radius);
         padding: 1em;
 
-        box-shadow: var(--shadow);
+        &::after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: var(--shadow);
+            position: absolute;
+            z-index: -1;
+        }
+
 
         p{
         padding: 0.5em;
@@ -300,24 +304,20 @@ main section{
 
 }
 
-.article_tab_eu {
-    .tab_title_eu{
 
-        grid-area: title_eu;
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
+.tab_title_eu{
+    grid-area: title_eu;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
-
-.article_tab_es{
-    .tab_content{
-        // display: none;
-    }
-    
-} 
 
 .tab_title_es{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
+
+.tab_content_es{
+    display: none;
+}
+
  
