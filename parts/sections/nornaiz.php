@@ -1,6 +1,6 @@
 <section id="section_nornaiz" class="section_tabs">
     <!-- EUSKARAZ -->
-    <article id="nornaiz_eu" class="article_tab article_tab_eu">
+    <article class="article_tab article_tab_eu">
         <div class="tab_title_eu active"><h2>Nor naiz</h2></div>
         
         <div class="tab_content tab_content_eu">
