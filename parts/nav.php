@@ -1,6 +1,6 @@
 <nav id="site-nav">
-    <section>
-        <a href="" id="nav-nor">
+    <div>
+        <a href="#section_nornaiz" id="nav-nor">
             <p class="nav-item-eus">Nor naiz</p>
             <p class="nav-item-cas">Quién soy</p>
         </a>
@@ -22,5 +22,5 @@
             <p class="nav-item-cas">Vídeos</p>
             <?php include_once('assets/img/svg/icons/video.svg') ?>
         </a>
-    </section>
+    </div>
 </nav>
