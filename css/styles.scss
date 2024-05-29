@@ -255,14 +255,14 @@ main section{
 
 #rrss{
     svg{
-        width: 40px;
         height: 30px;
         filter: drop-shadow(var(--shadow-header));
+        fill: var(--blanco);
     }
 
     display: flex;
     place-content: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 #scroll-indicator{

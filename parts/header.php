@@ -5,9 +5,15 @@
         <p id="site-title">Urko Buruaga</p>
     </section>
     <section id="rrss">
-    <?php include_once('assets/img/svg/rrss/instagram.svg') ?>
-    <?php include_once('assets/img/svg/rrss/youtube.svg') ?>
-    <?php include_once('assets/img/svg/rrss/tiktok.svg') ?>
+        <a href="https://www.instagram.com/urkoburuaga/" target="_blank" title="Enlace al perfil de Urko Buruaga en Instagram">
+            <?php include_once('assets/img/svg/rrss/instagram.svg') ?>
+        </a>
+        <a href="https://www.youtube.com/UrkoBuruaga" target="_blank" title="Enlace al canal de Urko Buruaga en YouTube">
+            <?php include_once('assets/img/svg/rrss/youtube.svg') ?>
+        </a>
+        <a href="https://www.tiktok.com/@urkoburuaga" target="_blank" title="Enlace al perfil de Urko Buruaga en TikTok">
+            <?php include_once('assets/img/svg/rrss/tiktok.svg') ?>
+        </a>
     </section>
     <p id="scroll-indicator">⌵</p>
 </header>
