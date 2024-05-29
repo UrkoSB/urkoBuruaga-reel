@@ -7,7 +7,7 @@
         <a href="#section_kontratazioa" id="nav-kontratazioa" class="nav-simplify">
             <p class="nav-item-eus">Kontratazioa</p>
             <p class="nav-item-cas">Contratación</p>
-            <?php include_once('assets/img/svg/icons/envelope.svg') ?>
+            <?php include('assets/img/svg/icons/envelope.svg') ?>
         </a>
         <a href="" id="nav-norentzat">
             <p class="nav-item-eus">Norentzat</p>
@@ -20,7 +20,7 @@
         <a href="" id="nav-bideoak" class="nav-simplify">
             <p class="nav-item-eus">Bideoak</p>
             <p class="nav-item-cas">Vídeos</p>
-            <?php include_once('assets/img/svg/icons/video.svg') ?>
+            <?php include('assets/img/svg/icons/video.svg') ?>
         </a>
     </div>
 </nav>
