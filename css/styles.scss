@@ -77,7 +77,8 @@
     // Efectos
     --shadow-header: 2px 2px 5px rgba(0, 0, 0, 0.752);
     --shadow: 3px 3px 10px rgba(0, 0, 0, 0.752);
-    --border-radius: 10px;
+    --border-radius-big: 10px;
+    --border-radius-small: 5px;
 
     // Visibilidad
     --display-laburdura: inline;
@@ -109,13 +110,13 @@ h2{
     font-size: min(5vw, 1.5em);
 }
 h3{
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 200;
     color: var(--amarillo);
     margin-bottom: 0.5rem;
 }
 
-p{
+p, label, button{
     font-family: 'Nunito Sans Light';
 }
 
@@ -158,12 +159,47 @@ main section{
     &:not(.section_tabs){
         background: rgba(31, 31, 31, 0.8);
         box-sizing: border-box;
-        border-radius: var(--border-radius);
+        border-radius: var(--border-radius-big);
         box-shadow: var(--shadow);
     }
 }
 
+form{
+    display: grid;
+}
 
+label{
+    text-align: left;
+    margin-top: var(--padding-general);
+    margin-bottom: 0.5rem;
+}
+
+input, textarea, button{
+    border-radius: var(--border-radius-small);
+    border: none;
+}
+input{
+    height: 30px;
+}
+
+input, textarea{
+    font-size: 1em;
+    padding: var(--padding-general);
+    box-sizing: border-box;
+    box-shadow: var(--shadow);
+}
+button[type=submit]{
+    background-color: #FF4767;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1em;
+    color: var(--blanco);
+
+    margin: var(--padding-general) 0 ; 
+    box-shadow: var(--shadow);
+}
 
 /***** Elementos específicos *****/
 .section_title{
@@ -221,8 +257,27 @@ main section{
     font-size: 1.7em;
 }
 
+// Harremana
+#article-harremana{
+    h3{
+        grid-row: auto;
+    }
+
+    svg{
+        margin-bottom: .5rem;
+    }
+}
+
 #contact-form{
-    grid-template-columns: repeat(2, 1fr);
+    grid-column: span 3;
+
+    p{
+        grid-row: auto;
+        text-align: left;
+        font-size: 0.7em;
+        width: 100%;
+        margin: 0;
+    }
 }
 
 #container{
@@ -232,6 +287,8 @@ main section{
     mask-image: linear-gradient(to top, transparent, black 6%);
     padding: 0 var(--padding-general);
 }
+
+
 
 
 
@@ -356,7 +413,7 @@ main section{
         background: linear-gradient(hsla(0, 0%, 12%, 0.8) 15%, #1f1f1f);
         width: auto;
         padding: var(--padding-general);
-        border-radius: var(--border-radius) var(--border-radius) 0 0;
+        border-radius: var(--border-radius-big) var(--border-radius-big) 0 0;
         z-index: -2;
         opacity: 0.85;
 
@@ -378,7 +435,7 @@ main section{
         grid-column: span 3;
         background: linear-gradient(#1f1f1f, rgba(31, 31, 31, 0.8) 15%);
         
-        border-radius: 0 var(--border-radius) var(--border-radius) var(--border-radius);
+        border-radius: 0 var(--border-radius-big) var(--border-radius-big) var(--border-radius-big);
         padding: var(--padding-contenido);
 
         &::after{
@@ -390,7 +447,7 @@ main section{
             box-shadow: var(--shadow);
             position: absolute;
             z-index: -1;
-            border-radius: 0 var(--border-radius) var(--border-radius) var(--border-radius);
+            border-radius: 0 var(--border-radius-big) var(--border-radius-big) var(--border-radius-big);
 
         }
 
