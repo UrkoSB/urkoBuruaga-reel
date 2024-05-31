@@ -1,4 +1,4 @@
-<form action="" method="post" id="contact-form">
+<form action="enviar-mensaje/index.php" method="post" id="contact-form">
     <label for="izena">Izena | Nombre</label>
     <input type="text" name="izena" id="izena" required>
 
