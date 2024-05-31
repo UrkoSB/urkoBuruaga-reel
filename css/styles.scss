@@ -53,6 +53,12 @@
     --blanco: #f2f2f2;
     --amarillo: #C7AF2B;
     --gris: #cecece;
+
+    // Fonts
+    --fontfamily-thin: 'Roboto Thin', 'Helvetica neue', sans-serif;
+    --fontfamily-light: "Nunito Sans Light";
+    --fontfamily-medium: 'Krub Medium';
+    --fontfamily-bold: 'Krub Bold';
     
 
     // Espacios
@@ -96,7 +102,6 @@
 
 /***** Texto *****/
 h1{
-    font-family: 'Nunito Sans Light';
     color: var(--amarillo);
     text-shadow: var(--shadow-header);
     font-size: min(5vw, 40px);
@@ -104,7 +109,7 @@ h1{
 }
 
 h2, h3{
-    font-family: 'Krub Bold';
+    font-family: var(--fontfamily-bold);
 }
 h2{
     font-size: min(5vw, 1.5em);
@@ -116,8 +121,8 @@ h3{
     margin-bottom: 0.5rem;
 }
 
-p, label, button{
-    font-family: 'Nunito Sans Light';
+h1, p, label, button, input, textarea{
+    font-family: var(--fontfamily-light);
 }
 
 /***** Etiquetas semánticas *****/
@@ -251,7 +256,7 @@ button[type=submit]{
 }
 
 .icono_texto{
-    font-family: 'Krub bold';
+    font-family: var(--fontfamily-bold);
     font-weight: 100;
     color: var(--amarillo);
     font-size: 1.7em;
@@ -304,7 +309,7 @@ button[type=submit]{
 }
 
 #site-title{
-    font-family: 'Roboto Thin', 'Helvetica neue', sans-serif;
+    font-family: var(--fontfamily-thin);
     text-transform: uppercase;
     font-weight: 100;
     font-size: min(9.585cqw, 68.3px);
@@ -325,7 +330,7 @@ button[type=submit]{
 #scroll-indicator{
     font-size: 3em;
     transform:scale(1.1,0.5);
-    font-family: 'Roboto Thin', 'Helvetica neue', sans-serif;
+    font-family: var(--fontfamily-thin);
 
     animation: updown 1.2s ease-in 5s infinite alternate none;
 }
@@ -382,11 +387,11 @@ button[type=submit]{
 }
 
 .nav-item-eus{
-    font-family: 'Krub Bold';
+    font-family: var(--fontfamily-bold);
 }
 
 .nav-item-cas{
-    font-family: 'Krub Medium';
+    font-family: var(--fontfamily-medium);
 }
 
 .nav-simplify{
