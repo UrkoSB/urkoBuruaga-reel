@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/scripts.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Urko Buruaga | Live looping & acoustic</title>
     <meta name="description" content="Gasteizko kantautorea. Kontzertuetan live looping-a eta akustikoa uztartzen ditut. | Cantautor gasteiztarra. Cantautor y live looping artist.">
 </head>
