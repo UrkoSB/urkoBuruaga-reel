@@ -5,6 +5,9 @@
     <label for="email">E-mail</label>
     <input type="email" name="email" id="email" required>
 
+    <label for="gaia">Gaia | Asunto</label>
+    <input type="gaia" name="gaia" id="gaia" required>
+
     <label for="mezua">Mezua | Mensaje</label>
     <textarea name="mezua" id="mezua" required></textarea>
 
