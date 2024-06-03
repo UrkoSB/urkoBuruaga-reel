@@ -1,10 +1,10 @@
 <nav id="site-nav">
     <div>
-        <a href="#section_nornaiz" id="nav-nor">
+        <a href="#nornaiz" id="nav-nor">
             <p class="nav-item-eus">Nor naiz</p>
             <p class="nav-item-cas">Quién soy</p>
         </a>
-        <a href="#section_kontratazioa" id="nav-kontratazioa" class="nav-simplify">
+        <a href="#kontratazioa" id="nav-kontratazioa" class="nav-simplify">
             <p class="nav-item-eus">Kontratazioa</p>
             <p class="nav-item-cas">Contratación</p>
             <?php include('assets/img/svg/icons/envelope.svg') ?>

@@ -1,4 +1,4 @@
-<section id="section_kontratazioa" class="w-icons">
+<section id="kontratazioa" class="w-icons">
     <span class="section_title">
         <h2>Kontratazioa</h2>
         <h2>Contratación</h2>
