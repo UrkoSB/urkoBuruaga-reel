@@ -53,6 +53,7 @@
     --blanco: #f2f2f2;
     --amarillo: #C7AF2B;
     --gris: #cecece;
+    --feedback-ok-color: #b9f065;
 
     // Fonts
     --fontfamily-thin: 'Roboto Thin', 'Helvetica neue', sans-serif;
@@ -226,6 +227,10 @@ button[type=submit]{
     padding: var(--padding-contenido);
     grid-template-rows: auto auto;
 
+    &:last-child{
+        padding-bottom: 0;
+    }
+
     span{
         &:not(.multiparrafo, .laburdura, .ez-laburdura){
             display:grid;
@@ -236,9 +241,11 @@ button[type=submit]{
     h3{
         grid-row: 1/2;
     }
-    p{
+    p:not(.message-feedback p){
         grid-row: 2/3;
+        margin: 0 var(--padding-contenido);
     }
+
     &:not(:first-of-type){
         border-top: 1pt solid var(--amarillo);
     }
@@ -248,10 +255,6 @@ button[type=submit]{
         width: 28px;
         grid-row: span 2;
 
-    }
-
-    p{
-        margin: 0 var(--padding-contenido);
     }
 }
 
@@ -273,15 +276,48 @@ button[type=submit]{
     }
 }
 
-#contact-form{
-    grid-column: span 3;
 
+#contact-form, .message-feedback{
+    grid-column: span 3;
+}
+#contact-form{
     p{
         grid-row: auto;
         text-align: left;
         font-size: 0.7em;
         width: 100%;
         margin: 0;
+    }
+}
+
+.message-feedback{
+    margin-top: var(--padding-general);
+    padding: var(--padding-general);
+
+}
+#message-ok{
+    border: 1pt solid var(--feedback-ok-color);
+}
+#message-error{
+    border: 1pt solid red;
+}
+
+.feedback-title{
+    margin-bottom: var(--padding-general);
+    font-weight: 700;
+}
+
+.feedback-ok-title{
+    color: var(--feedback-ok-color);
+    
+}
+.feedback-error-title{
+    color:red;
+}
+
+.feedback-text {
+    p:not(:last-child){
+        margin-bottom: var(--padding-general);
     }
 }
 

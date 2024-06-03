@@ -1,3 +1,4 @@
+<?php include_once('parts/functionality/message-sent-controller.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <script src="js/scripts.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Urko Buruaga | Live looping & acoustic</title>
-    <meta name="description" content="Gasteizko kantautorea. Kontzertuetan live looping-a eta akustikoa uztartzen ditut. | Cantautor gasteiztarra. Cantautor y live looping artist.">
+    <meta name="description" content="Gasteizko kantautorea. Kontzertuetan live looping-a eta akustikoa uztartzen ditut. | Cantautor gasteiztarra. Live looping artist.">
 </head>
 <body>
     <div id="container">

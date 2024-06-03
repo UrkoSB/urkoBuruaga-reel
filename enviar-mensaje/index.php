@@ -83,37 +83,12 @@ $style_ladillo = "style='color: #ff4767; font-weight: 700; background-color: #33
     
     $emailUrkoBuruaga = mail('harremana@urkoburuaga.com',$asunto,$message,$headers); 
 
-$TituloEnviado = '';
-$parafoEnviado = '';
+$sent = '';
 if( $emailRemitente && $emailUrkoBuruaga ) {
-    $TituloEnviado ='¡Tu mensaje se ha enviado correctamente!';
-    $parafoEnviado = 'Te he enviado una copia a tu bandeja de correo. Comprueba que te ha llegado y que los datos y el mensaje son los que querías enviar.';
-
+    $sent = 'true';
 }else {
-    $TituloEnviado ='¡Upss! Ha habido un problema al enviar tu mensaje!';
-    $parafoEnviado = '<a href="/../"><<Vuelve atrás y comprueba si te has dejado algo</a>.';
-
+    $sent = 'false';
 }
-
+header("Location: ../?messagesent=$sent");
+die();
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zemouz - Desarrollo web</title>
-    <meta name="description" content="Desarrollo de aplicaciones web en WordPress y Angular">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <!-- <header></header> -->
-    <main>
-        <h1><?=$TituloEnviado?></h1>
-        <p><?=$parafoEnviado?></p>
-        <p><a href="../">Vuelve a la página de inicio.</a></p>
-    </main>
-    <!-- <footer></footer> -->
-</body>
-</html>
-

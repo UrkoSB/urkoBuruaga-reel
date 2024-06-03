@@ -61,7 +61,18 @@
         <h3>Harremana</h3>
         <?php include('assets/img/svg/icons/envelope.svg') ?>
         <h3>Contacto</h3>
-        <?php include('parts/formulario-contacto.php') ?>
+        
+        <?php 
+        if (isset($_COOKIE["messagesent_cookie"])) {
+            if($_COOKIE["messagesent_cookie"] === 'true'){
+                include('parts/message-sent.php');
+            } else {
+                include('parts/message-error.php');
+            }
+        } else{
+            include('parts/formulario-contacto.php');
+        }
+        ?>
 
     </article>
 
