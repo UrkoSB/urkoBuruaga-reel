@@ -13,7 +13,7 @@
             <p class="nav-item-eus">Norentzat</p>
             <p class="nav-item-cas">Para quién</p>
         </a>
-        <a href="" id="nav-mugarriak">
+        <a href="#mugarriak" id="nav-mugarriak">
             <p class="nav-item-eus">Mugarriak</p>
             <p class="nav-item-cas">Hitos</p>
         </a>
