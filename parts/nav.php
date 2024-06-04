@@ -9,7 +9,7 @@
             <p class="nav-item-cas">Contratación</p>
             <?php include('assets/img/svg/icons/envelope.svg') ?>
         </a>
-        <a href="" id="nav-norentzat">
+        <a href="#norentzat" id="nav-norentzat">
             <p class="nav-item-eus">Norentzat</p>
             <p class="nav-item-cas">Para quién</p>
         </a>
