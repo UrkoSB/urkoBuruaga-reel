@@ -1,8 +1,8 @@
 <section id="kontratazioa" class="w-icons">
-    <span class="section_title">
+    <div class="section_title">
         <h2>Kontratazioa</h2>
         <h2>Contratación</h2>
-    </span>
+    </div>
     <article>
         <span>
             <h3>Katxea</h3>
