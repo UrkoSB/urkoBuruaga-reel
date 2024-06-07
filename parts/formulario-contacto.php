@@ -13,7 +13,7 @@
 
     <button type="submit"
         class="g-recaptcha" 
-        data-sitekey="reCAPTCHA_site_key" 
+        data-sitekey="6LfLTfMpAAAAAGGrzWqOTGgOohFC0B-p4FXdDywU" 
         data-callback='onSubmit' 
         data-action='submit'
     >
