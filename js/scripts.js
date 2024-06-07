@@ -29,9 +29,4 @@ window.addEventListener("load", function (event) {
             contenidoEu.style.display = "none";
         }
     });
-
-    // reCaptcha v3
-    function onSubmit(token) {
-        document.getElementById("contact-form").submit();
-    }
 });

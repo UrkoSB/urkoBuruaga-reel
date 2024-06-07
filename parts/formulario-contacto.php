@@ -31,3 +31,10 @@
     Información relativa al tratamiento de sus datos personales: Responsable: Urko Sáenz de Buruaga. Finalidad: Gestionar los mensajes enviados a través de este formulario. Derechos e información adicional: Pueden ejercerse los derechos relativos al tratamiento de sus datos y obtener información adicional sobre dicho tratamiento en la política de privacidad del sitio web urkoburuaga.com.
     </p>
 </form>
+
+<!-- reCaptcha v3 -->
+<script>
+    function onSubmit(token) {
+        document.getElementById("contact-form").submit();
+    }
+</script>

@@ -1,7 +1,6 @@
 <?php
 if ( isset( $_GET['messagesent'] ) ) {
-	echo $_GET['messagesent'];
-    $cookie_name = 'messagesent_cookie'; // Cambia esto por el nombre de tu cookie
+    $cookie_name = 'messagesent_cookie';
     $value = htmlspecialchars($_GET['messagesent'], ENT_QUOTES, 'UTF-8');
     
     // Establece la cookie
