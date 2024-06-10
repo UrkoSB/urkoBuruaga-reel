@@ -24,10 +24,15 @@
         Enviar
     </button>
 
-    <p id="lopd-form">
+    <p class="lopd-form recaptcha-texto">
+        This site is protected by reCAPTCHA and the Google
+        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+        <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+    </p>
+    <p class="lopd-form">
     Zure datu pertsonalen tratamenduari buruzko informazioa: Arduraduna:  Urko Sáenz de Buruaga. Helburua: harreman-inprimakiaren bitartez helarazitako mezuak kudeatzea. Eskubideak eta informazio gehigarria: Zure datuen tratamenduari buruzko eskubideak erabili daitezke eta urkoburuaga.com webguneko pribatutasun politikan aipatu tratamenduari buruzko informazio gehigarria lor daiteke. 
     </p>
-    <p id="lopd-form">
+    <p class="lopd-form">
     Información relativa al tratamiento de sus datos personales: Responsable: Urko Sáenz de Buruaga. Finalidad: Gestionar los mensajes enviados a través de este formulario. Derechos e información adicional: Pueden ejercerse los derechos relativos al tratamiento de sus datos y obtener información adicional sobre dicho tratamiento en la política de privacidad del sitio web urkoburuaga.com.
     </p>
 </form>

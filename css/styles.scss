@@ -290,8 +290,18 @@ button[type=submit]{
         font-size: 0.7em;
         width: 100%;
         margin: 0;
+
+        &.recaptcha-texto{
+            margin-bottom: var(--padding-general);
+
+            a{
+                color: inherit;
+            }
+        }
     }
 }
+
+.grecaptcha-badge{ visibility: hidden; }
 
 .message-feedback{
     margin-top: var(--padding-general);
