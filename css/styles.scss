@@ -302,6 +302,12 @@ button[type=submit]{
     }
 }
 
+label.required::after {
+    content: ' *';
+    color: var(--rosa);
+    opacity: 0.85;
+  }
+
 .grecaptcha-badge{ visibility: hidden; }
 
 .message-feedback{
