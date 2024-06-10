@@ -54,6 +54,7 @@
     --amarillo: #C7AF2B;
     --gris: #cecece;
     --feedback-ok-color: #b9f065;
+    --rosa: #FF4767;
 
     // Fonts
     --fontfamily-thin: 'Roboto Thin', 'Helvetica neue', sans-serif;
@@ -198,7 +199,7 @@ input, textarea{
     box-shadow: var(--shadow);
 }
 button[type=submit]{
-    background-color: #FF4767;
+    background-color: var(--rosa);
     display: flex;
     place-content: center;
     align-items: center;
