@@ -70,7 +70,7 @@
     // Tamaños
     --width-nav: calc(100% - (var(--padding-general) * 2));
     --height-nav: calc((var(--padding-general) * 2) + 35px);
-    --height-container: calc(100vh - var(--height-nav));
+    --height-container: calc(100dvh - var(--height-nav));
 
     // Maquetacion
     --gt-body:  "content"
@@ -150,7 +150,7 @@ body{
 header{
     width: 100%;
     text-align: center;
-    min-height: calc(100vh - var(--height-nav)  - 1rem);
+    height: calc(100dvh - var(--height-nav)  - 1rem);
     display: grid;
     padding-bottom: 3em;
 
