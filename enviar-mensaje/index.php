@@ -26,7 +26,7 @@ $score = $json_respuesta['score'];
 $sent = '';
 if($success && $score >= 0.7){
     include('enviar-emails.php');
-    if( enviarEmailRemitente() && enviarEmailUrkoBuruaga() ) {
+    if( isEverythingFilled() && enviarEmailUrkoBuruaga() && enviarEmailRemitente() ) {
         $sent = 'true';
     }else {
         $sent = 'false';

@@ -4,6 +4,14 @@ $email = $_POST['email'];
 $asunto = $_POST['gaia'];
 $mensaje = $_POST['mezua'];
 
+function isEverythingFilled(){
+    global $nombre;
+    global $email;
+    global $asunto;
+    global $mensaje;
+    return ($nombre != '') && ($email != '') && ($asunto != '') && ($mensaje != '');
+}
+
 $style_fondo = "style='background-color: #C7AF2B;font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; padding: 1em 0;'";
 $style_email = "style='max-width: 800px;padding: 0.5em 2em 1em;border-radius: 6px;margin: auto;background-color: #eeeeee;box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.7);'";
 $style_copia = "style='padding-left: 20px;border-left: 5pt solid black;'";
