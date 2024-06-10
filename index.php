@@ -1,4 +1,7 @@
-<?php include_once('parts/functionality/message-sent-controller.php') ?>
+<?php 
+include_once('parts/functionality/message-sent-controller.php');
+include_once('../ignore/keys.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/scripts.js"></script>
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfLTfMpAAAAAGGrzWqOTGgOohFC0B-p4FXdDywU"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=<?= PUBLIC_KEY ?>"></script>
     <title>Urko Buruaga | Live looping & acoustic</title>
     <meta name="description" content="Gasteizko kantautorea. Kontzertuetan live looping-a eta akustikoa uztartzen ditut. | Cantautor gasteiztarra. Live looping artist.">
 </head>

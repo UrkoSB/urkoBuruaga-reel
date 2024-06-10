@@ -1,3 +1,6 @@
+<?php
+include_once('../ignore/keys.php');
+?>
 <form action="enviar-mensaje/index.php" method="post" id="contact-form">
     <label for="izena">Izena | Nombre</label>
     <input type="text" name="izena" id="izena" required>
@@ -13,7 +16,7 @@
 
     <button type="submit"
         class="g-recaptcha" 
-        data-sitekey="6LfLTfMpAAAAAGGrzWqOTGgOohFC0B-p4FXdDywU" 
+        data-sitekey="<?= PUBLIC_KEY ?>" 
         data-callback='onSubmit' 
         data-action='submit'
     >
