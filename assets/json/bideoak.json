@@ -1,0 +1,53 @@
+{"data":[
+    {
+    "modalidad": "Live looping",
+    "bideoak":[
+        {
+            "izenburua":"Min hau (cover)",
+            "iturria":"Instagram",
+            "url":"https://www.instagram.com/reel/C5EmvqVK7Ad/"
+        },
+        {
+            "izenburua":"Johnny B. Goode (cover)",
+            "iturria":"YouTube",
+            "url":"https://youtu.be/WRgG3q84db8"
+        },
+        
+        {
+            "izenburua":"Zerbait egiteke",
+            "iturria":"YouTube",
+            "url":"https://youtu.be/ZIEIm_1Axv8"
+        },
+        {
+            "izenburua":"Guttuna",
+            "iturria":"Instagram",
+            "url":"https://www.instagram.com/p/Cl1ebZENNH2/"
+        },
+        {
+            "izenburua":"Fracking from the storm",
+            "iturria":"Instagram",
+            "url":"https://www.instagram.com/p/COkDkcrrxpR/"
+        }
+    ]
+    },
+    {
+        "modalidad": "Akustiko | Acústico",
+        "bideoak":[
+            {
+                "izenburua":"Amazes me",
+                "iturria":"YouTube",
+                "url":"https://youtu.be/xxeqXWU-2KQ"
+            },
+            {
+                "izenburua":"Biluzik",
+                "iturria":"https://youtu.be/96tRum1JDR8",
+                "url":"YouTube"
+            },
+            {
+                "izenburua":"Saiatzen",
+                "iturria":"https://youtu.be/pxYtcDzM_10",
+                "url":"YouTube"
+            }    
+        ]
+        }
+]}
