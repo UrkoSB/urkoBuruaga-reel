@@ -1,14 +1,6 @@
 <footer>
     <section id="rrss_footer" class="rrss">
-        <a href="https://www.instagram.com/urkoburuaga/" target="_blank" title="Enlace al perfil de Urko Buruaga en Instagram">
-            <?php include('assets/img/svg/rrss/instagram.svg') ?>
-        </a>
-        <a href="https://www.youtube.com/UrkoBuruaga" target="_blank" title="Enlace al canal de Urko Buruaga en YouTube">
-            <?php include('assets/img/svg/rrss/youtube.svg') ?>
-        </a>
-        <a href="https://www.tiktok.com/@urkoburuaga" target="_blank" title="Enlace al perfil de Urko Buruaga en TikTok">
-            <?php include('assets/img/svg/rrss/tiktok.svg') ?>
-        </a>
+        <?php include(dirname(__DIR__) . '/parts/rrss.php') ?>
     </section>
     <p id="copyright">© <?php echo date("Y"); ?> · Urko Buruaga</p>
     <div id="links-textos-legales">
