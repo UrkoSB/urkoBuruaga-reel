@@ -18,8 +18,6 @@ include_once('../ignore/keys.php');
         <?php include_once('parts/header.php') ?>
         <?php include_once('parts/main.php') ?>
         <?php include_once('parts/footer.php') ?>
-        
-        <footer></footer>
     </div>
     <?php include_once('parts/nav.php') ?>
 </body>

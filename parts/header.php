@@ -4,7 +4,7 @@
         <img src="assets/img/urko-buruaga-logo.png" alt="">
         <p id="site-title">Urko Buruaga</p>
     </section>
-    <section id="rrss">
+    <section id="rrss_header" class="rrss">
         <a href="https://www.instagram.com/urkoburuaga/" target="_blank" title="Enlace al perfil de Urko Buruaga en Instagram">
             <?php include_once('assets/img/svg/rrss/instagram.svg') ?>
         </a>
