@@ -2,16 +2,16 @@
 include_once('../ignore/keys.php');
 ?>
 <form action="enviar-mensaje/index.php" method="post" id="contact-form">
-    <label for="izena">Izena | Nombre</label>
+    <label for="izena" class="required">Izena | Nombre</label>
     <input type="text" name="izena" id="izena" required>
 
-    <label for="email">E-mail</label>
+    <label for="email" class="required">E-mail</label>
     <input type="email" name="email" id="email" required>
 
-    <label for="gaia">Gaia | Asunto</label>
+    <label for="gaia" class="required">Gaia | Asunto</label>
     <input type="gaia" name="gaia" id="gaia" required>
 
-    <label for="mezua">Mezua | Mensaje</label>
+    <label for="mezua" class="required">Mezua | Mensaje</label>
     <textarea name="mezua" id="mezua" required></textarea>
 
     <button type="submit"
