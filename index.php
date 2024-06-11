@@ -17,6 +17,7 @@ include_once('../ignore/keys.php');
     <div id="container">
         <?php include_once('parts/header.php') ?>
         <?php include_once('parts/main.php') ?>
+        <?php include_once('parts/footer.php') ?>
         
         <footer></footer>
     </div>

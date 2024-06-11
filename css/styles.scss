@@ -126,7 +126,7 @@ h3{
 p{
     line-height: 1.5em;
 }
-h1, p, label, button, input, textarea{
+h1, p, label, button, input, textarea, a{
     font-family: var(--fontfamily-light);
 }
 
@@ -172,6 +172,16 @@ main section{
         border-radius: var(--border-radius-big);
         box-shadow: var(--shadow);
     }
+}
+
+footer{
+    margin-bottom: var(--height-nav);
+    a{
+        color: var(--gris);
+    }
+}
+#links-textos-legales{
+    display: grid;
 }
 
 form{
