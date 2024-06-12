@@ -1,4 +1,4 @@
-<h2>Aviso legal</h2>
+<h2 id="#texto-legal_titulo">Aviso legal</h2>
 
 <h3>1. Titularidad del sitio web</h3>
 

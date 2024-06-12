@@ -2,7 +2,7 @@
 
 <h3>1. Responsable del tratamiento</h3>
 
-<p>Urko Sáenz de Buruaga, con domicilio en Vitoria-Gasteiz (Araba), País Vasco, como responsable del sitio web <a href="https://urkoburuaga.com">urkoburuaga.com</a>, trata los datos personales de sus usuarios de acuerdo con lo establecido en la legislación vigente sobre protección de datos, en particular, el Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).</p>
+<p>Urko Sáenz de Buruaga, con domicilio en Vitoria-Gasteiz (Araba), País Vasco, como responsable del sitio web <a href="https://urkoburuaga.com" title="Enlace al sitio web de Urko Buruaga">urkoburuaga.com</a>, trata los datos personales de sus usuarios de acuerdo con lo establecido en la legislación vigente sobre protección de datos, en particular, el Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).</p>
 
 <h3>2. Finalidades del tratamiento</h3>
 <p>Los datos personales que se recogen a través de este sitio web se utilizan para las siguientes finalidades:</p>

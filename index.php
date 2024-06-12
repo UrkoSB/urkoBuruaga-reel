@@ -1,6 +1,7 @@
 <?php 
 include_once('parts/functionality/message-sent-controller.php');
 include_once('../ignore/keys.php');
+include_once('../ignore/conf.php');
 ?>
 <!DOCTYPE html>
 <html lang="eu">

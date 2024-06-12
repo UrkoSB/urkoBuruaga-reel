@@ -17,7 +17,7 @@
 
 <p>Este sitio web utiliza cookies de reCAPTCHA Enterprise, un servicio de Google que ayuda a proteger el sitio web del spam y el abuso. reCAPTCHA Enterprise utiliza una cookie llamada "_GRECAPTCHA" para realizar su análisis de riesgo.</p>
 
-<p>Puede encontrar más información sobre las cookies de reCAPTCHA Enterprise en la siguiente página: https://policies.google.com/technologies/cookies</p>
+<p>Puede encontrar más información sobre las cookies de reCAPTCHA Enterprise en la siguiente página: <a href="https://policies.google.com/technologies/cookies" title="Enlace a la página sobre las cookies de Google" target="_blank">https://policies.google.com/technologies/cookies</a></p>
 
 <h3>4. ¿Cómo puedo gestionar las cookies?</h3>
 
@@ -30,7 +30,7 @@
 
 <p>Puede obtener más información sobre las cookies en los siguientes sitios web:</p>
 
-<p>Agencia Española de Protección de Datos (AEPD): https://www.aepd.es/politica-de-cookies</p>
+<p>Agencia Española de Protección de Datos (AEPD): <a href="https://www.aepd.es/politica-de-cookies" title="Enlace a la página sobre política de cookies en el sitio web de la Agencia Española de Protección de Datos" target="_blank">https://www.aepd.es/politica-de-cookies</a></p>
 
 <h3>6. Actualizaciones y cambios en la política de cookies</h3>
 

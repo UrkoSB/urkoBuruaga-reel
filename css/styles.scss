@@ -55,6 +55,7 @@
     --gris: #cecece;
     --feedback-ok-color: #b9f065;
     --rosa: #FF4767;
+    --background-section: rgba(31, 31, 31, 0.8);
 
     // Fonts
     --fontfamily-thin: 'Roboto Thin', 'Helvetica neue', sans-serif;
@@ -139,13 +140,13 @@ h3{
 p{
     line-height: 1.5em;
 }
-h1, p, label, button, input, textarea, a{
+h1, p, label, button, input, textarea, a, ul{
     font-family: var(--fontfamily-light);
 }
 
 /***** Etiquetas semánticas *****/
 body{
-    background-image: url(../assets/img/urko-buruaga-fondo-canyon.jpg);
+    background-image: url('../assets/img/urko-buruaga-fondo-canyon.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -180,7 +181,7 @@ main section{
 
     padding: var(--padding-contenido);
     &:not(.section_tabs){
-        background: rgba(31, 31, 31, 0.8);
+        background: var(--background-section);
         box-sizing: border-box;
         border-radius: var(--border-radius-big);
         box-shadow: var(--shadow);
@@ -557,6 +558,67 @@ label.required::after {
     }
 }
 
+
+// Textos legales
+.texto-legal{
+    h3{
+        margin: var(--padding-general) 0 ;
+    }
+    a{
+        color: inherit;
+    }
+
+    ul{
+        padding-left: var(--padding-contenido);
+    }
+    p, ul{
+        margin-bottom: 1em;
+    }
+    header{
+        height: auto;
+        left: 0;
+        margin: 0;
+        grid-template-columns: auto auto;
+        top: var(--padding-general);
+        align-content: center;
+        background-color: var(--background-section);
+        padding: 1em 2em;
+        margin-bottom: var(--padding-contenido);
+        margin-left: -2em;
+        justify-content: space-between;
+        gap: 0;
+    }
+    #logo{
+        order: 1;
+        // display: flex;
+        width: auto;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        img{
+            width: 100px;
+            filter: contrast(0%);
+        }
+
+
+    }
+    #site-title{
+        font-size: min(6cqw, 4em);
+        margin: 0;
+    }
+    h1{
+        display: none;
+    }
+    
+    #rrss_header{
+        order:2;
+        align-items: center;
+        gap: min(4cqw, 40px);
+    }
+    #scroll-indicator{
+        display: none;
+    }
+}
 
 // Pestañas
 .section_tabs{
