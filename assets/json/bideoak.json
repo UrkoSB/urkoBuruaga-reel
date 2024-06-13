@@ -10,13 +10,13 @@
         {
             "izenburua":"Johnny B. Goode (cover)",
             "iturria":"YouTube",
-            "url":"https://youtu.be/WRgG3q84db8"
+            "url":"WRgG3q84db8"
         },
         
         {
             "izenburua":"Zerbait egiteke",
             "iturria":"YouTube",
-            "url":"https://youtu.be/ZIEIm_1Axv8"
+            "url":"ZIEIm_1Axv8"
         },
         {
             "izenburua":"Guttuna",
@@ -36,17 +36,17 @@
             {
                 "izenburua":"Amazes me",
                 "iturria":"YouTube",
-                "url":"https://youtu.be/xxeqXWU-2KQ"
+                "url":"xxeqXWU-2KQ"
             },
             {
                 "izenburua":"Biluzik",
-                "iturria":"https://youtu.be/96tRum1JDR8",
-                "url":"YouTube"
+                "iturria":"YouTube",
+                "url":"96tRum1JDR8"
             },
             {
                 "izenburua":"Saiatzen",
-                "iturria":"https://youtu.be/pxYtcDzM_10",
-                "url":"YouTube"
+                "iturria":"YouTube",
+                "url":"pxYtcDzM_10"
             }    
         ]
         }
