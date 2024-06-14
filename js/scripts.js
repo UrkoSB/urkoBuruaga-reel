@@ -51,6 +51,14 @@ window.addEventListener("load", function (event) {
         }
     });
     
+    
+    formatearIframeInstagram();
+    setTimeout(() => {
+        formatearIframeInstagram();    
+    }, 2000);
+});
+
+function formatearIframeInstagram(){
     for (const iframe of document.querySelectorAll('.instagram-media')) {
         iframe.style.border = "none";
         iframe.style.minWidth = "";
@@ -59,25 +67,4 @@ window.addEventListener("load", function (event) {
         iframe.style.height = "";
         iframe.style.margin = "";
     }
-    
-    // intervalo = setInterval(probarIframe, 500);
-});
-
-function probarIframe(){
-    console.log("Entra")
-    if (document.querySelectorAll('.instagram-media')) {
-        for (const iframe of document.querySelectorAll('.instagram-media')) {
-            // iframe.style.border = "none" 
-            clearInterval(intervalo)
-            if (iframe.querySelector('.Footer')) {
-                for (const footer of iframe.querySelector('.Footer')) {
-                    footer.style.display = "none";
-                }
-            }
-
-        }
-    }
-
-    return;
-
 }
