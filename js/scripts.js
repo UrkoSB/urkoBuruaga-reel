@@ -49,7 +49,6 @@ function agregarScriptReCaptcha(){
         script.src = 'https://www.google.com/recaptcha/enterprise.js?render='+siteKey;
         script.async = true;
         document.head.appendChild(script);
-        console.log(("Hecho"));
 }
 
 
