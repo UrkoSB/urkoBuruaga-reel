@@ -461,6 +461,8 @@ figure{
     border: 1pt solid var(--rosa);
     background-color: var(--rosa);
     border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+
+    width: 100%;
 }
 
 figcaption{
@@ -474,13 +476,16 @@ figcaption{
 iframe{
     width: 100%;
 }
+iframe.youtube{
+    aspect-ratio: 16/9;
+}
 .instagram-media{
 
     aspect-ratio: 9/12.991;
     border:none;
-    margin-top: -54px;
+    margin-top: -55px;
     margin-bottom: -155px;
-    clip-path: inset(54px 0px 156px 0px);
+    clip-path: inset(55px 0px 156px 0px);
 }
 
 .kronologia{
