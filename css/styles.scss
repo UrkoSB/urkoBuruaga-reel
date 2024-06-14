@@ -480,12 +480,14 @@ iframe.youtube{
     aspect-ratio: 16/9;
 }
 .instagram-media{
-
+    width: 100%;
     aspect-ratio: 9/12.991;
     border:none;
     margin-top: -55px;
     margin-bottom: -155px;
     clip-path: inset(55px 0px 156px 0px);
+
+    
 }
 
 .kronologia{

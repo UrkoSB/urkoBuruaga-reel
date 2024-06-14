@@ -19,6 +19,32 @@ function modificarVideosIG(){
     }
 }
 
+
+function formatearIframeInstagram(){
+    for (const iframe of document.querySelectorAll('.instagram-media')) {
+        iframe.style.border = "none";
+        iframe.style.minWidth = "";
+        iframe.style.maxWidth = "";
+        iframe.style.width = "";
+        iframe.style.height = "";
+        iframe.style.margin = "";
+    }
+}
+
+function agregarScriptInstagram(){
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = '//www.instagram.com/embed.js';
+        script.async = true;
+        script.onload = () => resolve();
+        script.onerror = () => reject(new Error('Error loading script'));
+        document.head.appendChild(script);
+    });
+}
+
+
+/***** DOM CARGADO *****/
+
 window.addEventListener("load", function (event) {
     /***** DOM *****/
     // TABS
@@ -50,21 +76,26 @@ window.addEventListener("load", function (event) {
             contenidoEu.style.display = "none";
         }
     });
-    
-    
-    formatearIframeInstagram();
-    setTimeout(() => {
-        formatearIframeInstagram();    
-    }, 2000);
-});
 
-function formatearIframeInstagram(){
-    for (const iframe of document.querySelectorAll('.instagram-media')) {
-        iframe.style.border = "none";
-        iframe.style.minWidth = "";
-        iframe.style.maxWidth = "";
-        iframe.style.width = "";
-        iframe.style.height = "";
-        iframe.style.margin = "";
-    }
-}
+        
+    const targetDiv = document.querySelector('#bideoak'); 
+
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            agregarScriptInstagram()
+            .then(() => {
+                formatearIframeInstagram();
+                setTimeout(() => {
+                    formatearIframeInstagram();    
+                }, 2500);
+            }).catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    });
+    }, { }); // Optional:
+
+    observer.observe(targetDiv);
+
+});
