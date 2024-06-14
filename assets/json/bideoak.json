@@ -8,6 +8,16 @@
             "url":"https://www.instagram.com/reel/C5EmvqVK7Ad/"
         },
         {
+            "izenburua":"Guttuna",
+            "iturria":"Instagram",
+            "url":"https://www.instagram.com/p/Cl1ebZENNH2/"
+        },
+        {
+            "izenburua":"Fracking from the storm",
+            "iturria":"Instagram",
+            "url":"https://www.instagram.com/p/COkDkcrrxpR/"
+        },
+        {
             "izenburua":"Johnny B. Goode (cover)",
             "iturria":"YouTube",
             "url":"WRgG3q84db8"
@@ -17,17 +27,8 @@
             "izenburua":"Zerbait egiteke",
             "iturria":"YouTube",
             "url":"ZIEIm_1Axv8"
-        },
-        {
-            "izenburua":"Guttuna",
-            "iturria":"Instagram",
-            "url":"https://www.instagram.com/p/Cl1ebZENNH2/"
-        },
-        {
-            "izenburua":"Fracking from the storm",
-            "iturria":"Instagram",
-            "url":"https://www.instagram.com/p/COkDkcrrxpR/"
         }
+        
     ]
     },
     {
@@ -47,6 +48,11 @@
                 "izenburua":"Saiatzen",
                 "iturria":"YouTube",
                 "url":"pxYtcDzM_10"
+            }    ,
+            {
+                "izenburua":"Cerca de las vías (cover)",
+                "iturria":"Instagram",
+                "url":"https://www.instagram.com/reel/C5a560OKUuE"
             }    
         ]
         }
