@@ -43,6 +43,16 @@ function agregarScriptInstagram(){
 }
 
 
+function agregarScriptReCaptcha(){
+        const siteKey = document.querySelector('button.g-recaptcha').dataset.sitekey;
+        const script = document.createElement('script');
+        script.src = 'https://www.google.com/recaptcha/enterprise.js?render='+siteKey;
+        script.async = true;
+        document.head.appendChild(script);
+        console.log(("Hecho"));
+}
+
+
 /***** DOM CARGADO *****/
 
 window.addEventListener("load", function (event) {
@@ -76,10 +86,21 @@ window.addEventListener("load", function (event) {
         }
     });
 
-        
-    const targetDiv = document.querySelector('#bideoak'); 
+    /***** CARGAR SCRIPTS DINÁMICAMENTE *****/
+    // reCaptcha
+    const targetDivReCaptcha = document.querySelector('#kontratazioa'); 
+    const observerReCaptcha = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            agregarScriptReCaptcha();
+        }
+    });
+    }, { }); // Optional:
+    observerReCaptcha.observe(targetDivReCaptcha);
 
-    const observer = new IntersectionObserver(entries => {
+    // Videos
+    const targetDivBideoak = document.querySelector('#bideoak'); 
+    const observerBideoak = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             agregarScriptInstagram()
@@ -94,7 +115,6 @@ window.addEventListener("load", function (event) {
         }
     });
     }, { }); // Optional:
-
-    observer.observe(targetDiv);
+    observerBideoak.observe(targetDivBideoak);
 
 });
