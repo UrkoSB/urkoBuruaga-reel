@@ -84,6 +84,9 @@
     --display-a-footer: grid;
     --text-align-textos-legales-footer: center;
 
+    --gtc-video-gallery: 1fr;
+    --justify-video-gallery: center;
+
     //
     --display-simplify-p: none;
     --display-simplify-svg: block;
@@ -112,6 +115,10 @@
         --gc-textos-legales-footer: 3/4;
         --display-a-footer: block;
         --text-align-textos-legales-footer: left;
+
+        --gtc-video-gallery: 1fr 1fr;
+        --justify-video-gallery: space-between;
+
     }
 }
 
@@ -140,7 +147,7 @@ h3{
 p{
     line-height: 1.5em;
 }
-h1, p, label, button, input, textarea, a, ul{
+h1, p, label, button, input, textarea, a, ul, figcaption{
     font-family: var(--fontfamily-light);
 }
 
@@ -408,16 +415,72 @@ label.required::after {
 
 }
 
-.gallery_img{
-    margin: calc(var(--padding-contenido) *2) 0 var(--padding-contenido);
+.gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    
     place-items: center;
+    flex-wrap: wrap;
     gap: var(--padding-contenido);
+    
+}
+
+.gallery_img{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: calc(var(--padding-contenido) *2) 0 var(--padding-contenido);
+    justify-content: space-around;
+
     img{
         max-width: 100px;
         max-height: 100px;
     }
+}
+
+.gallery_video{
+    grid-template-columns: 1fr 1fr;
+    // justify-content: var(--justify-video-gallery);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#bideoak{
+
+    h3{
+        margin-bottom: var(--padding-general);
+    }
+    article{
+        &:first-of-type{
+            margin: var(--padding-general) 0;
+        }
+        &:not(:first-of-type){
+            margin: var(--padding-contenido) 0;
+        }
+    }
+
+}
+
+figure{
+    border: 1pt solid var(--rosa);
+    background-color: var(--rosa);
+    border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+}
+
+figcaption{
+    text-align: center;
+    color: #fefefe;
+    background-color: var(--rosa);
+    padding: 0.5em 0;
+}
+
+/* BIDEOAK */
+iframe{
+    width: 100%;
+}
+.instagram-media{
+
+    aspect-ratio: 9/12.991;
+    border:none;
+    margin-top: -54px;
+    margin-bottom: -155px;
+    clip-path: inset(54px 0px 156px 0px);
 }
 
 .kronologia{
@@ -704,4 +767,4 @@ label.required::after {
 }
 
 
- 
+
