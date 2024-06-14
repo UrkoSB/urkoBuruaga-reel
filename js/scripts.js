@@ -68,7 +68,6 @@ window.addEventListener("load", function (event) {
     });
 
     tituloEs.addEventListener('click', function(e) {
-        console.log("click");
         if(!tituloEs.classList.contains("active")){
             tituloEu.classList.toggle("active");
             tituloEs.classList.toggle("active");
