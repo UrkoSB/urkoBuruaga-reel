@@ -9,10 +9,10 @@
     </div>
 
     <article class="gallery gallery_img">
-        <img src="assets/img/logos/gasteiz-udala.png" alt="">
-        <img src="assets/img/logos/aramaioko-udala.png" alt="">
-        <img src="assets/img/logos/oihaneder-euskara-etxea.png" alt="">
-        <img src="assets/img/logos/jimmy-jazz-gasteiz.png" alt="">
+        <img loading='lazy' src="assets/img/logos/gasteiz-udala.png" alt="">
+        <img loading='lazy' src="assets/img/logos/aramaioko-udala.png" alt="">
+        <img loading='lazy' src="assets/img/logos/oihaneder-euskara-etxea.png" alt="">
+        <img loading='lazy' src="assets/img/logos/jimmy-jazz-gasteiz.png" alt="">
         
     </article>
 
