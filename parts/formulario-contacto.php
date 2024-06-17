@@ -1,7 +1,13 @@
 <?php
 include_once('../ignore/keys.php');
 ?>
+
 <form action="enviar-mensaje/index.php" method="post" id="contact-form">
+    <p class="recaptcha-aceptar">
+        Inprimakia bidaltzean, reCaptcha-ren cookia erabiltzea onartzen duzu, gizakia zarela egiaztatzeko. <br>
+        Al enviar el formulario, aceptas el uso de la cookie de reCaptcha para evaluar si eres humano/a. <br>
+        Informazio gehiago, bidalketa botoiaren azpian. Mas información, debajo del botón de envío.
+    </p>
     <label for="izena" class="required">Izena | Nombre</label>
     <input type="text" name="izena" id="izena" required>
 
@@ -13,6 +19,8 @@ include_once('../ignore/keys.php');
 
     <label for="mezua" class="required">Mezua | Mensaje</label>
     <textarea name="mezua" id="mezua" required></textarea>
+
+    
 
     <button type="submit"
         class="g-recaptcha" 
@@ -26,11 +34,18 @@ include_once('../ignore/keys.php');
         </svg>
         Enviar
     </button>
-
+    
     <p class="lopd-form recaptcha-texto">
         This site is protected by reCAPTCHA and the Google
         <a href="https://policies.google.com/privacy">Privacy Policy</a> and
         <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+    </p>
+    <p class="lopd-form recaptcha-texto">
+        Este sitio utiliza la cookie _GRECAPTCHA de Google reCaptcha para protegerlo contra bots y el envío de spam. 
+        Es una cookie de sesión y se eliminará automáticamente cuando cierres el navegador.
+        Esta cookie NO se utilizará para rastrear tu comportamiento en otros sitios web.
+        Al enviar el formulario, aceptas el uso de esta cookie para evaluar si eres humano/a.
+        Si no estás de acuerdo, considera contactarme por alguna de las redes sociales en las que estoy presente.
     </p>
     <p class="lopd-form">
     Zure datu pertsonalen tratamenduari buruzko informazioa: Arduraduna:  Urko Sáenz de Buruaga. Helburua: harreman-inprimakiaren bitartez helarazitako mezuak kudeatzea. Eskubideak eta informazio gehigarria: Zure datuen tratamenduari buruzko eskubideak erabili daitezke eta urkoburuaga.com webguneko pribatutasun politikan aipatu tratamenduari buruzko informazio gehigarria lor daiteke. 
