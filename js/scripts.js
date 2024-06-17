@@ -90,7 +90,7 @@ window.addEventListener("load", function (event) {
     const targetDivReCaptcha = document.querySelector('#kontratazioa'); 
     const observerReCaptcha = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && document.querySelector('button.g-recaptcha')) {
             agregarScriptReCaptcha();
         }
     });
