@@ -1,7 +1,8 @@
 <header>
     <h1>Live looping & acoustic songwriter</h1>
     <section id="logo">
-        <img loading="lazy" src=<?=SITE_URL."/assets/img/urko-buruaga-logo.png"?> alt="Urko Buruagaren logoa. Logo de Urko Buruaga">
+        <?php include('assets/img/logo-urko-buruaga/urkoburuaga_logo.svg') ?>
+        <img id="header_img" src="assets/img/logo-urko-buruaga/urko-buruaga-live-looping.jpg" alt="Urko Buruagaren logoa. Logo de Urko Buruaga">
         <p id="site-title">Urko Buruaga</p>
     </section>
     <section id="rrss_header" class="rrss">

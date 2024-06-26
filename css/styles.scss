@@ -536,6 +536,24 @@ iframe.youtube{
         width: 100%;
         opacity: 0.9;
     }
+    position: relative;
+}
+
+#logo-svg{
+    position: absolute;
+    width: 100%;
+
+    text-align: center;
+}
+
+#logo-clippath{
+    width: 100%;
+    // transform: scale(1, 1);
+}
+#header_img{
+    clip-path: url(#logo-clippath);
+    // width: 100%;
+    opacity: 0.85;
 }
 
 #site-title{
