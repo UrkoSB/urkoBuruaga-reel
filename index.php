@@ -8,7 +8,7 @@ include_once('../ignore/conf.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_v1_0_01.css">
     <script async src="js/scripts.js"></script>
     <title>Urko Buruaga | Live looping & acoustic</title>
     <meta name="description" content="Gasteizko kantautorea. Kontzertuetan live looping-a eta akustikoa uztartzen ditut. | Cantautor gasteiztarra. Live looping artist.">
