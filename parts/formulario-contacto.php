@@ -15,7 +15,7 @@ include_once('../ignore/keys.php');
     <input type="email" name="email" id="email" required>
 
     <label for="gaia" class="required">Gaia | Asunto</label>
-    <input type="gaia" name="gaia" id="gaia" required>
+    <input type="text" name="gaia" id="gaia" required>
 
     <label for="mezua" class="required">Mezua | Mensaje</label>
     <textarea name="mezua" id="mezua" required></textarea>
